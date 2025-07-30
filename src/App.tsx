@@ -17,10 +17,7 @@ function App() {
   ]
 
   const tasks2: Task[] = [
-    {id: 1, title: 'HELLO WORLD', isDone: true},
-    {id: 2, title: 'I am happy', isDone: true},
-    {id: 3, title: 'YO', isDone: false},
-    { id: 4, title: 'Redux', isDone: false },
+
   ]
 
   return (
