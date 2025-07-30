@@ -15,6 +15,15 @@ export const ToDoListItem = ({title, tasks, date}: Props) => {
         <button>+</button>
       </div>
       <ul>
+      {tasks.map((el) => {
+        return (
+            <li>
+              <input type="checkbox" checked={el.isDone} /> <span>{el.title}</span>
+            </li>
+        )
+      })}
+      </ul>
+      {/* <ul>
         <li>
           <input type="checkbox" checked={tasks[0].isDone} /> <span>{tasks[0].title}</span>
         </li>
@@ -24,7 +33,7 @@ export const ToDoListItem = ({title, tasks, date}: Props) => {
         <li>
           <input type="checkbox" checked={tasks[2].isDone} /> <span>{tasks[2].title}</span>
         </li>
-      </ul>
+      </ul> */}
       <div>
         <button>All</button>
         <button>Active</button>
